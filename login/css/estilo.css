@@ -1,0 +1,124 @@
+:root {
+  --bg-pantalla: #F4F4F5;  /* Gris neutro claro */
+  --tarjeta-bg:  #FFFFFF;  /* Blanco */
+  --texto-titulo: #18181B;  /* Negro suave */
+  --texto-cuerpo: #71717A;  /* Gris neutro */
+  --borde-input:  #E4E4E7;  /* Borde claro */
+  --boton-primario: #18181B; /* Negro/Gris oscuro para el botón principal */
+  --boton-invitado: #FFFFFF; /* Fondo blanco con borde */
+  --texto-invitado: #18181B; 
+}
+body {
+  background-color: var(--bg-pantalla);
+  font-family: Arial, sans-serif;
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+}
+
+table {
+  background-color: var(--tarjeta-bg);
+  border: 2px solid #000000;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+#titulo_1{
+    background-color:rgba(118, 118, 247, 0.5);
+    color:var(--texto-titulo);
+    border: black;
+    border-radius:20px;
+    box-shadow: 0 4px 6px -1px rgba(7, 0, 0, 0.5);
+    padding: 16px;
+    padding-top:30px;
+    margin:10px;
+}
+
+#mi_boton{
+    background-color:(--color-primario) ;
+    color:(--color-secundario);
+    font-size: 16px;
+    border-radius: 8px;
+    margin:10px;
+}
+
+#mi_boton2{
+    background-color:var(--boton-invitado) ;
+    color:var(--texto-invitado);
+    font-size: 16px;
+    border-radius: 8px;
+    margin:10px;
+}
+
+#mi_boton3{
+    background-color:var(--boton-invitado);
+    color:var(--texto-invitado);
+    font-size: 16px;
+    border-radius: 8px;
+    margin:10px;
+}
+
+button:hover {
+    background-color: blue;
+    cursor: pointer;
+}
+
+/*1. Selector universal */
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+    /*2. Selector de Tipo (etiqueta de html) */
+
+p {
+    line-height: 1.6;
+    color: rgb(0, 0, 0);
+    background-color: #334155;
+    margin: 15px;
+}
+
+/* 3. Selector de clase (prefijo .), es reutilizable */
+
+.destacado {
+    background-color: blueviolet;
+    border-radius: 30px;
+    box-shadow: 0 4px 6px -1px rgba(123,0,0,0.5);
+    padding: 12px;
+    padding-top:50vh;
+}
+
+/* 4. Slector de ID, aplica para un solo elemento */
+
+#parrafo_1{
+    background-color: azure;
+}
+
+#parrafo_2{
+    background-color: rgb(240, 243, 255);
+    padding:15px;
+}
+
+/* .5 Selector descendiente, a las etiquetas "p" dentro de un "nav" */
+
+nav p{
+    font-size: 16px;
+    color:blanchedalmond;
+}
+
+/* Unidades de medida
+1. px (píxeles): Medida absoluta fija. Recomendada para bordes.
+
+2. rem (Root EM): Medida relativa al tamaño de fuente del navegador.
+                1rem = 16px
+3. % (Porcentaje): Relativo al tamaño de la caja del padre.
+
+3. vw /vh (Viewport width/height): Relativo a la pantalla completa.
+                100 vh = 100% de la altura visible del monitor.
+
+/*
